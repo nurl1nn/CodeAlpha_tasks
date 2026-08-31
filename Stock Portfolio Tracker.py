@@ -9,16 +9,17 @@ stock_prices = {
     "NFLX": 635
 }
 total = 0
+with open("final.txt", "w") as file:
+    pass
 while input("Do you want to add a new one? (Y/N): ").upper() == "Y":
     stock = input("Enter stock name: ").upper()
     if stock not in stock_prices:
         print("This stock is not available.")
         continue
-    else:
-        shares = int(input("How many shares do you want: "))
-        total_value = stock_prices.get(stock) * shares
-        total += total_value
-        with open("final.txt", "a") as file:
-            file.write(f"Stock: {stock}, Shares: {shares}, Total: ${total_value}\n")
+    shares = int(input("How many shares do you want: "))
+    total_value = stock_prices[stock] * shares
+    total += total_value
+    with open("final.txt", "a") as file:
+        file.write(f"Stock: {stock}, Shares: {shares}, Total: ${total_value}\n")
 with open("final.txt", "r") as file:
     print(f"\nThank you for using our service!\nThis is your portfolio:\n{file.read()}Total Investment: ${total}")
