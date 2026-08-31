@@ -18,7 +18,7 @@ while input("Do you want to add a new one? (Y/N): ").upper() == "Y":
         shares = int(input("How many shares do you want: "))
         total_value = stock_prices.get(stock) * shares
         total += total_value
-        with open("final12_txt", "a") as file:
+        with open("final.txt", "a") as file:
             file.write(f"Stock: {stock}, Shares: {shares}, Total: ${total_value}\n")
-with open("final12_txt", "r") as file:
+with open("final.txt", "r") as file:
     print(f"\nThank you for using our service!\nThis is your portfolio:\n{file.read()}Total Investment: ${total}")
