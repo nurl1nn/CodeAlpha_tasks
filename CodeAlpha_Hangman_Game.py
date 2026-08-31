@@ -5,7 +5,7 @@ chosen_word=random.choice(words)
 word_progress=list(len(chosen_word)*"_")
 while limit>0:
         if "_" not in word_progress:
-                     print("Congurlations you did it!")
+                     print("Congratulations you did it!")
                      exit()
         player_input = input("Enter a letter: ")
         if player_input in chosen_word:             
