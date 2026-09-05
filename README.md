@@ -2,6 +2,9 @@
 
 This repository contains Python projects completed during the CodeAlpha internship program.
 
+### 1. 🎮 [Hangman Game](./CodeAlpha_Hangman_Game.py)
+### 2. 🤖 [Rule-Based Chatbot](./Rule_based_Chatbot.py)
+### 3. 📈 [Stock Portfolio Tracker](./Stock%20Portfolio%20Tracker.py)
 ---
 
 ## Projects
